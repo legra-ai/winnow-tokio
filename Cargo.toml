@@ -1,0 +1,30 @@
+[package]
+name = "winnow-tokio"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+description = "Drive incremental winnow parsers from Tokio AsyncRead sources"
+repository = "https://github.com/legra-ai/winnow-tokio"
+homepage = "https://github.com/legra-ai/winnow-tokio"
+documentation = "https://docs.rs/winnow-tokio"
+keywords = ["winnow", "tokio", "parser", "streaming", "async"]
+categories = ["asynchronous", "parser-implementations"]
+readme = "README.md"
+
+[lib]
+doctest = true
+
+[dependencies]
+tokio = { version = "1", features = ["io-util"] }
+winnow = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["io-util", "macros", "rt"] }
+
+[lints.rust]
+missing_docs = "deny"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
