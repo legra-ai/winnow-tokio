@@ -39,6 +39,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "rhusky"
+version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bd58f5095f1eaaee85441008005db48773976f5bb85bedd35d6cf3f04db8ec4b"
+
+[[package]]
 name = "syn"
 version = "3.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -90,6 +96,7 @@ dependencies = [
 name = "winnow-tokio"
 version = "0.1.0"
 dependencies = [
+ "rhusky",
  "tokio",
  "winnow",
 ]
