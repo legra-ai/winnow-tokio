@@ -2,7 +2,7 @@
 name = "winnow-tokio"
 version = "0.1.1"
 edition = "2024"
-authors = ["DataRoad Inc, Delaware, USA, trading as Legra"]
+authors = ["Jacobus Geluk <jacobus.geluk@dataroad.com>"]
 rust-version = "1.85"
 license = "MIT OR Apache-2.0"
 description = "Drive incremental winnow parsers from Tokio AsyncRead sources"
